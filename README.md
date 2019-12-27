@@ -78,3 +78,5 @@ We define logic for handling the transformation of data from other domains.
 
 The only place in your code that touches the outside world (anything outside your domain - other domains, or external consumers) is interfaces.py.
 Any file that handles interfaces.py should mock out other dependent domains but you should still be testing your own interface definitions.
+You should use Python's standard patch tool for this.
+You can use MagicMock where it makes sense.
